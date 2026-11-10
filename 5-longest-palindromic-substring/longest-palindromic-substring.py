@@ -12,6 +12,7 @@ class Solution:
                     temp=s[i:j+1]
                     if temp[::-1]==temp and len(temp)>len(best):
                         best= temp
+                        break
         if best:return best
         else: return s[0]
         
