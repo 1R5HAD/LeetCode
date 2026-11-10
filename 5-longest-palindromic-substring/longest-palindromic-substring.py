@@ -6,6 +6,8 @@ class Solution:
         if len(s)==1:return s
         for i in range(len(s)):
             for j in range(len(s)-1,i,-1):
+                if j-i+1<=len(best):
+                    break
                 if s[j]==s[i]:
                     temp=s[i:j+1]
                     if temp[::-1]==temp and len(temp)>len(best):
