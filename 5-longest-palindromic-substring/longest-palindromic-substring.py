@@ -10,8 +10,6 @@ class Solution:
                     temp=s[i:j+1]
                     if temp[::-1]==temp and len(temp)>len(best):
                         best= temp
-        if best:
-            return best
-        else:
-            return s[0]
+        if best:return best
+        else: return s[0]
         
