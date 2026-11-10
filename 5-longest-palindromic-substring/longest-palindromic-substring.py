@@ -3,7 +3,7 @@ class Solution:
         l=0
         best=""
         if not s: return 0
-        if len(s)==1:return s
+        if len(s)==1 or s[::-1]==s:return s 
         for i in range(len(s)):
             for j in range(len(s)-1,i,-1):
                 if j-i+1<=len(best):
