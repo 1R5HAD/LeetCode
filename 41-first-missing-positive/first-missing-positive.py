@@ -16,9 +16,6 @@ class Solution:
         res=1
         for i in range(len(nums)):
             seen.add(nums[i])
-            if nums[i]==res:
-                while res in seen:
-                    res+=1
-            else:
-                continue
+            while res in seen:
+                res+=1
         return res
